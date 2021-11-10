@@ -1,3 +1,7 @@
+<<<<<<< HEAD
 Changed by rehman
 
 NEW FILE
+=======
+Changes by rizwan
+>>>>>>> rizwan
