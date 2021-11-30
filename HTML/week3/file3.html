@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="author" content="Jame">
+    <title>Document</title>
+
+    <base href="www.jk.com">
+
+    <style>
+        table, th, td {
+            border: 1px solid #fafafa;
+            padding: 10px;
+            border-spacing: 10px;
+            border-collapse:collapse;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #D6EEEE;
+            color: #000;
+        }
+
+        tr:nth-child(odd):hover{
+            background-color: greenyellow;
+        }
+
+        /* td:nth-child(odd){
+            visibility: collapse;
+        } */
+
+        /* tr, td {
+            margin: 20px;
+        } */
+    </style>
+
+</head>
+<body>
+
+    <table style="width: 100%;">
+        <colgroup>
+            <col span="1" >
+            <col span="1" style="background-color: #0cbd32">
+            <col span="1" style="background-color: #bd0c1b">
+        </colgroup>
+        
+        <thead style="color: greenyellow;">
+            <tr style="height: 30px; ">
+                <th>NAME</th>
+                <th style="width:50%; color: red;">AGE</th>
+                <th>CITY</th>
+            </tr>
+        </thead>
+        
+
+        <tbody style="color: green;">
+            <tr>
+                <td>AA</td>
+                <td style="text-align: center;">AA</td>
+                <td>AA</td>
+            </tr>
+            <tr>
+                <td rowspan="2">AA</td>
+                <td style="text-align: center;">AA</td>
+                <td >AA</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">AA</td>
+                <td>AA</td>
+            </tr>
+            <tr>
+                <td>AA</td>
+                <td>AA</td>
+                <td>AA</td>
+            </tr>
+            <tr>
+                <td>AA</td>
+                <td>AA</td>
+                <td>AA</td>
+            </tr>
+            <tr>
+                <td>AA</td>
+                <td>AA</td>
+                <td>AA</td>
+            </tr>
+            <tr>
+                <td>AA</td>
+                <td>AA</td>
+                <td>AA</td>
+            </tr>
+            <tr>
+                <td>AA</td>
+                <td>AA</td>
+                <td>AA</td>
+            </tr>
+            <tr>
+                <td>AA</td>
+                <td>AA</td>
+                <td>AA</td>
+            </tr>
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3"> 3 rows out of 50 records</td>
+                <!-- <td>BB</td> -->
+            </tr>
+        </tfoot>
+    </table>
+
+
+    <hr style="height: 10px; background-color: thistle;">
+
+    <ul>
+        <li>THIS IS IT</li>
+        <li>THIS IS IT</li>
+        <li>THIS IS IT</li>
+        <li>THIS IS IT</li>
+        <li>THIS IS IT</li>
+        <li>THIS IS IT</li>
+        <li>THIS IS IT</li>
+    </ul>
+
+    <ol type="i">
+        <li>THIS IS IT
+            <ol>
+                <li>THIS</li>
+                <li>THIS</li>
+                <li>THIS</li>
+                <li>THIS</li>
+            </ol>
+        </li>
+        <li>THIS IS IT</li>
+        <li>THIS IS IT</li>
+        <li>THIS IS IT</li>
+        <li>THIS IS IT</li>
+        <li>THIS IS IT</li>
+        <li>THIS IS IT</li>
+        <li>THIS IS IT</li>
+    </ol>
+
+    <dl>
+        <dt>THIS</dt>
+        <dd>THIS IS IT</dd>
+    </dl>
+
+    <dl>
+        <dt>THIS</dt>
+        <dd>THIS IS IT</dd>
+    </dl>
+    <dl>
+        <dt>THIS</dt>
+        <dd>THIS IS IT</dd>
+    </dl>
+
+    <img src="./ffe.jpg" alt="">
+
+    <iframe src="https://google.com" height="50px" width="500px" frameborder="0"></iframe>
+    
+</body>
+</html>
