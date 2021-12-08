@@ -1,0 +1,16 @@
+h1{font-size: 30px;}
+        .class{font-size: 30px;}
+        #id{font-size: 30px;}
+
+        body {
+            font-size: 14px;
+            color: red;
+        }
+
+        * {
+            color: green;
+        }
+
+        p .new, .new{
+            color: blueviolet;
+        }
