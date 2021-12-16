@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     p:last-child{
+        color:red;
+     }
+
+     q:lang(noaword) {
+        quotes: "/" "/";
+        }
+    
+    input:checked{
+        /* color:green; */
+        width: 50px;
+        height: 50px;
+    }
+
+    input:disabled{
+        color:green;
+        background-color: tomato;
+    }
+    input:enabled{
+        background-color: rgb(54, 155, 155);
+    }
+
+    input[type="number"]:enabled{
+        background-color: rgb(209, 149, 70);
+    }
+
+    p:empty{
+        background-color: red;
+        height: 20px;
+    }
+
+    p:first-of-type{
+        background-color: green;
+    }
+    p:last-of-type{
+        background-color: blue;
+    }
+
+    input:focus{
+        background-color: rgb(255, 255, 0);
+    }
+
+    input[type="number"]:in-range{
+        background-color: rgb(255, 255, 0);
+    }
+
+    </style>
+</head>
+<body>
+
+    <p id="new">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore facere magni reprehenderit, eveniet quisquam officia quia, unde esse laudantium fugit molestias adipisci deserunt sit natus quae sunt quam accusamus neque?</p>
+    <p id="new">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore facere magni reprehenderit, eveniet quisquam officia quia, unde esse laudantium fugit molestias adipisci deserunt sit natus quae sunt quam accusamus neque?</p>
+    
+
+    <div>
+        <p>NEW ONE HERE</p>
+        <p>NEW ONE HERE</p>
+        <p>NEW ONE HERE</p>
+        <p>NEW ONE HERE</p>
+        <p>NEW ONE HERE</p>
+        
+    </div>
+
+    <p> this is new one here 
+        <q lang="noaword">THIS IS IT</q>
+    </p>
+
+    <hr>
+
+    <input type="radio" checked="checked" value="male" name="gender"> Male<br>
+  <input type="radio" value="female" name="gender"> Female<br>
+  <input type="checkbox" checked="checked" value="Bike"> I have a bike<br>
+  <input type="checkbox" value="Car"> I have a car 
+
+
+  <input type="text" disabled value="THIS IS IT"> <br>
+  <input type="text"> <br>
+  <input type="text"> <br>
+  <input type="text"> <br>
+  <input type="text"> <br>
+  <input type="number" min="5" max="10"> <br>
+  
+  <p></p>
+
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        /* elementname:pseudo-class{
+            property:value;
+        } */
+
+        h1:hover{
+            color:red;
+        }
+
+                 /* unvisited link */
+        a:link {
+        color: #FF0000;
+        }
+
+        /* visited link */
+        a:active {
+        color: #00FF00;
+        }
+
+        /* mouse over link */
+         a:hover{
+        color: #FF00FF;
+        }
+       
+
+        /* selected link */
+        a:active {
+        color: #0000FF;
+        }
+
+        button{
+            /* position: absolute; */
+            /* display: flex; */
+            display: block;
+            margin-top: 5px;
+        }
+
+         /* descendant selector (space)
+        child selector (>)
+        adjacent sibling selector (+)
+        general sibling selector (~) */
+
+        /* h4:hover ~ p {
+            display: block;
+        } */
+
+        /* h4:hover ~ .para{
+            display: block;
+
+        } */
+        
+        
+        .para{
+            display: block;
+            background-color: rgba(255, 255, 0, 0.4);
+            font-size: 18px;
+            padding: 20px;
+            font-style: oblique;
+        }
+
+        #para1 {
+            background-color: tomato;
+        }
+
+
+
+
+        
+
+    </style>
+
+    
+</head>
+<body>
+
+    <h1>THIS IS NEW HEADING</h1>
+
+    <pre>
+        What are Pseudo-classes?
+            A pseudo-class is used to define a special state of an element.
+
+            For example, it can be used to:
+
+            Style an element when a user mouses over it
+            Style visited and unvisited links differently
+            Style an element when it gets focus
+    </pre>
+
+    <a href="http://blal" target="_blank" rel="noopener noreferrer">NEW LINK</a>
+
+    <h4>SHOW</h4>
+    
+    <p class="para">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa quasi quos, at tempora doloribus dolor accusantium, libero minima cum molestias pariatur illum doloremque aspernatur. Ex delectus corporis beatae iusto magnam?
+    </p>
+
+    <p class="para" id="para1">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa quasi quos, at tempora doloribus dolor accusantium, libero minima cum molestias pariatur illum doloremque aspernatur. Ex delectus corporis beatae iusto magnam?
+    </p>
+    <p class="para">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa quasi quos, at tempora doloribus dolor accusantium, libero minima cum molestias pariatur illum doloremque aspernatur. Ex delectus corporis beatae iusto magnam?
+    </p>
+
+    <p class="para">
+        HSSNSN <span>NEW</span>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa quasi quos, at tempora doloribus dolor accusantium, libero minima cum molestias pariatur illum doloremque aspernatur. Ex delectus corporis beatae iusto magnam?
+    </p>
+
+
+
+    <script>
+        // var para1 = document.getElementById("para1");
+        // console.log(para1)
+        // para1.style.backgroundColor = "green";
+        // document.write(
+        //     para1.innerHTML
+        // )
+
+        // var para = document.getElementsByClassName("para");
+        // console.log(para)
+        // para.forEach(element => {
+        //     element.style.backgroundColor = "grey";
+        // });
+        // for(var i = 0; i < para.length; i++){
+        //     para[i].style.backgroundColor = "grey";
+        // }
+        
+    </script>
+</body>
+</html>
