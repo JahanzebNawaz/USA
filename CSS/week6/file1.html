@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        p::first-line{
+            color: red;
+            font-size: 18px;
+        }
+
+        h1::first-letter{
+            /* color: blue; */
+            font-size: 50px;
+        }
+
+        h1::before{
+            content: "♥";
+            /* background-color: red; */
+            color: green;
+            padding: 5px;
+            margin: 5px;
+        }
+
+        h1::after{
+            content: "♥";
+            /* background-color: red; */
+            color: green;
+            padding: 5px;
+            margin: 5px;
+        }
+
+        ::marker{
+            color: red;
+            font-size: 18px;
+        }
+
+        p::selection{
+            color: red;
+            font-size: 18px;
+            background: greenyellow;
+        }
+
+        .navbar{
+            list-style-type: none;
+            display: flex;
+            justify-content: space-around;
+            position: sticky;
+            top: 0;
+            background-color: #f1f1f1;
+            margin: 15px 5px;
+            padding: 10px;
+        }
+        .navbar  a:hover{
+            color: rgb(245, 245, 245);
+            background-color: #0425b8cc;
+            font-size: 24px;
+            font-family: 'Courier New', Courier, monospace;
+            /* transition: 2s; */
+            padding: 10px;
+            
+        }
+        .navbar a:link{
+            text-decoration: none;
+            /* color: rgb(5, 19, 143); */
+            font-size: 16px;
+            text-transform: uppercase;
+            font-family: 'Courier New', Courier, monospace;
+            
+        }
+
+        .navbar_aside{
+            list-style-type: none;
+            /* display: grid; */
+            background-color: rgb(245, 245, 245);
+            margin: 15px 5px;
+            padding: 10px;
+            width: 15%;
+            position: fixed;
+            left: 0;
+            top: 2;
+            line-height: 30px;
+            text-align: center;
+        }
+
+        .navbar_aside a:link{
+            text-decoration: none;
+            font-size: 18px;
+            text-transform: uppercase;
+            color: salmon;
+        }
+
+        .navbar_aside a:hover{
+            font-size: 20px;
+            color: sandybrown;
+            /* background-color: rgb(248, 233, 166); */
+        }
+        .navbar_aside li:hover{
+            background-color: rgb(248, 233, 166);
+        }
+
+        
+       
+        .link {
+            display: none;
+            position: absolute;
+            left: 18vw;
+            top: 139px;
+            width: 100px;
+        }
+
+        .dropdown:hover .link {
+            display: block;
+            background-color: seagreen;
+        }
+
+        .dropdown2{
+            display: none;
+            position: absolute;
+            top: 55px;
+            right: 5px;
+        }
+
+        #one:hover ~ .dropdown2{
+            display: block;
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    
+    <ul class="navbar">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li id="one"><a href="#about">About</a></li>
+        
+        <li class="dropdown2">
+            <a href="#aa">NEW ONE</a>
+        </li>
+    </ul>
+
+
+    <ul class="navbar_aside">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+
+        <li class="dropdown">
+            <a href="#new">Dropdown
+                
+                <div class="link">
+                    <a href="http://" target="_blank" rel="noopener noreferrer">NEW LINK</a>
+                    <a href="#na">NEW LINK</a>
+                    <a href="#na">NEW LINK</a>
+                    <a href="#na">NEW LINK</a>
+                </div>
+            </a>
+        </li>
+    </ul>
+
+
+        <h1>THIS IS WEEK 6</h1>
+
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptates quasi quo tempore id magni est recusandae quibusdam nostrum, neque, labore autem qui ut nobis dolor dolores velit, et ducimus?</p>
+
+
+        <ul>
+            <li>Item 1</li>
+            <li>Item 1</li>
+            <li>Item 1</li>
+            <li>Item 1</li>
+        </ul>
+
+        <ol>
+            <li>Item 1</li>
+            <li>Item 1</li>
+            <li>Item 1</li>
+            <li>Item 1</li>
+        </ol>
+
+
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptates quasi quo tempore id magni est recusandae quibusdam nostrum, neque, labore autem qui ut nobis dolor dolores velit, et ducimus?</p>
+
+
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptates quasi quo tempore id magni est recusandae quibusdam nostrum, neque, labore autem qui ut nobis dolor dolores velit, et ducimus?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptates quasi quo tempore id magni est recusandae quibusdam nostrum, neque, labore autem qui ut nobis dolor dolores velit, et ducimus?</p>
+
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptates quasi quo tempore id magni est recusandae quibusdam nostrum, neque, labore autem qui ut nobis dolor dolores velit, et ducimus?</p>
+
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptates quasi quo tempore id magni est recusandae quibusdam nostrum, neque, labore autem qui ut nobis dolor dolores velit, et ducimus?</p>
+
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptates quasi quo tempore id magni est recusandae quibusdam nostrum, neque, labore autem qui ut nobis dolor dolores velit, et ducimus?</p>
+
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptates quasi quo tempore id magni est recusandae quibusdam nostrum, neque, labore autem qui ut nobis dolor dolores velit, et ducimus?</p>
+
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptates quasi quo tempore id magni est recusandae quibusdam nostrum, neque, labore autem qui ut nobis dolor dolores velit, et ducimus?</p>
+    
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptates quasi quo tempore id magni est recusandae quibusdam nostrum, neque, labore autem qui ut nobis dolor dolores velit, et ducimus?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptates quasi quo tempore id magni est recusandae quibusdam nostrum, neque, labore autem qui ut nobis dolor dolores velit, et ducimus?</p>
+
+    
+</body>
+</html>
