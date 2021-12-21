@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        form{
+            width: 400px;
+        }
+        
+        form input{
+            width: 100%;
+            margin: 10px 5px;
+            padding: 5px;
+            box-sizing: border-box;
+
+            border: none;
+            /* background: transparent; */
+            border-bottom: 2px solid red;
+        }
+
+
+        [type*="search"]{
+            margin: 10px 5px;
+            padding: 5px;
+            width: 200px;
+            box-sizing: border-box;
+            transition: 2s ease-in;
+
+        }
+
+        input[type*="search"]:focus{
+           width: 100%;
+        }
+
+        body{
+            counter-reset: abc;
+        }
+
+        h2::before{
+            counter-increment: abc;
+            content: "Number " counter(abc) ": ";
+        }
+
+
+        ol{
+            counter-reset: section;
+            list-style-type: none;
+        }
+
+        li::before{
+            counter-increment: section;
+            content: counters(section,".") " ";
+        }
+
+    </style>
+</head>
+<body>
+
+
+    <form action="" method="post">
+        <input type="text" name="name" placeholder="name">
+        <input type="text" name="email" placeholder="email">
+        <input type="text" name="phone" placeholder="phone">
+
+
+        <input type="submit" name="submit" value="submit">
+        
+    </form>
+    
+
+    <hr>
+    <input type="search" placeholder="Search">
+
+
+    <h2>NEW ONE</h2>
+    <h2>NEW TWO</h2>
+    <h2>NEW THREE</h2>
+    <h2>NEW FOUR</h2>
+    <h2>NEW ONE</h2>
+
+
+    <ol>
+        <li>item</li>
+        <li>item   
+        <ol>
+          <li>item</li>
+          <li>item</li>
+          <li>item
+          <ol>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+          </ol>
+          </li>
+          <li>item</li>
+        </ol>
+        </li>
+        <li>item</li>
+        <li>item</li>
+      </ol>
+
+
+</body>
+</html>
