@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #box{
+            background-color: rgb(163, 90, 90);
+            padding: 10px;
+        }
+
+        .box__class{
+            background-color: rgb(118, 90, 163);
+            padding: 10px;
+        }
+        
+        
+        p{
+            background-color: rgb(14, 26, 190) !important;
+            padding: 10px;
+        }
+
+        .boxA{
+            background-color: rgb(163, 90, 90);
+            padding: 10px;
+            left: 50px;
+            /* position: absolute; */
+            width: calc(100% - 100px);
+        }
+
+        .boxB{
+            background-color: rgb(118, 90, 163);
+            padding: 10px;
+            width: max(50%, 200px);
+        }
+
+
+        .column{
+            width: 33.33%;
+            float: left;
+            /* padding: 2px; */
+        }
+
+        /* .first{
+            width: 25%;
+        }
+        .middle{
+            width: 50%;
+        }
+        .end{
+            width: 25%;
+        } */
+
+        /* .row:after{
+            content: "";
+            display: table;
+            clear: both;
+        } */
+
+        
+
+        @media screen and (max-width: 600px){
+            .column{
+                width: 100%;
+            }
+        }
+            
+
+    </style>
+</head>
+<body>
+    
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis eligendi nesciunt saepe voluptatem excepturi rem quo facere. Ducimus vitae alias nisi optio facere corporis ab quod quos nam, quo expedita.</p>
+
+
+    <p id="box">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda quidem impedit molestiae veritatis animi, deserunt id illo magnam illum dignissimos, delectus sit omnis veniam ducimus est ad cum ratione cumque.</p>
+
+    <p class="box__class">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum earum eligendi doloribus dolor. Illo atque magnam hic deleniti voluptatibus praesentium earum, excepturi dolore minima repellat saepe neque laudantium possimus quam.</p>
+
+
+    <p class="boxA">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat itaque veniam voluptatibus, suscipit eligendi quae molestias aspernatur asperiores consectetur tempora repellendus architecto reiciendis aperiam dolor cumque vitae natus excepturi tempore.</p>
+
+    <hr>
+
+
+    <p class="boxB">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ullam beatae quos nisi! Temporibus ipsam, commodi quasi, molestias amet modi possimus natus officiis repellat suscipit sunt facere, facilis velit nobis.
+    </p>
+
+    <hr>
+
+    <div class="row">
+        <div class="column first">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores, labore assumenda nisi, temporibus cum error reiciendis placeat consequatur et quasi perferendis animi fugit rerum, itaque perspiciatis sunt vitae repellat dicta.</p>
+        </div>
+        <div class="column middle">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores, labore assumenda nisi, temporibus cum error reiciendis placeat consequatur et quasi perferendis animi fugit rerum, itaque perspiciatis sunt vitae repellat dicta.</p>
+        </div>
+        <div class="column end">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores, labore assumenda nisi, temporibus cum error reiciendis placeat consequatur et quasi perferendis animi fugit rerum, itaque perspiciatis sunt vitae repellat dicta.</p>
+        </div>
+    </div>
+</body>
+</html>
