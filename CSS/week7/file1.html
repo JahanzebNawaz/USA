@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: calc(100% - 50px);
+            background-color: #3162665d;
+            /* margin: 10px; */
+            padding:20px;
+            margin: 20px 0px;
+            /* color: rgb(121, 100, 237); */
+            border: 2px solid currentColor;
+            background-image: linear-gradient(to bottom right, #13b9c85d, #2600ff5d, #d11c1c);
+        }
+
+        .box2{
+            width:200px;
+            height:300px;
+            border: 2px solid currentColor;
+            padding: 10px;
+            float: left;
+            background-image: radial-gradient(farthest-side at 10% 65%, #13b9c85d 10%, #2600ff5d 30%, #d11c1c 50%);
+            /* background-image: radial-gradient(closest-side at 10% 65%, #13b9c85d 10%, #2600ff5d 30%, #d11c1c 50%); */
+        }
+
+        .box3{
+            width:30%;
+            height:300px;
+            border: 2px solid currentColor;
+            padding: 20px;
+            float: left;
+            border-radius: 50%;
+            /* overflow: hidden; */
+            
+            background-image: conic-gradient(#13b9c85d, #2600ff5d, #d11c1c);
+        }
+        .box3 p{
+            word-wrap: break-word;
+            padding: 35px;
+
+        }
+
+        .span{
+            border: inherit;
+            background-color: inherit;
+            writing-mode: sideways-lr;
+        }
+
+        .button{
+            width: 100px;
+            height: 100px;
+            background-color: #0846d85d;
+            padding:10px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            margin: 20px;
+
+        }
+
+        .button:link{
+            background-color: #3162665d;
+            text-decoration: none;
+            color: white;
+        }
+
+        @font-face {
+            font-family: 'MyFont';
+            src: url('fonts/MyFont.ttf');
+        }
+
+        p{
+            font-family: 'MyFont', 'sans-serif';
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        Lorem ipsum dolor <span class="span">sit amet consectetur</span>, adipisicing elit. Distinctio libero architecto, laudantium vitae sit dicta ipsam adipisci ut eaque. Animi magni aut tempore rem, voluptatem eius aspernatur dolore repudiandae atque.
+    </div>
+
+    <hr>
+
+    <div class="box2">
+        Lorem ipsum dolor <span class="span">sit amet consectetur</span>, adipisicing elit. Distinctio libero architecto, laudantium vitae sit dicta ipsam adipisci ut eaque. Animi magni aut tempore rem, voluptatem eius aspernatur dolore repudiandae atque.
+    </div>
+
+    <div class="box3">
+        <p>
+            Lorem ipsum dolor <span class="span">sit amet consectetur</span>, adipisicing elit. Distinctio libero architecto, laudantium vitae sit dicta ipsam adipisci ut eaque. Animi magni aut tempore rem, voluptatem eius aspernatur dolore repudiandae atque.
+        </p>
+    </div>
+
+
+    <!-- <a href="http://" target="_blank" class="button" rel="noopener noreferrer">CLICK</a>
+
+    <button>CLICK</button>
+    <input type="submit" value="Submit">
+    <input type="button" value="Submit">
+     -->
+    
+</body>
+</html>
