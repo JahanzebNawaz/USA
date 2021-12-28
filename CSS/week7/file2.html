@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.boxa{
+            width: 200px;
+            height: 200px;
+            /* background-color: yellow; */
+            border: 1px solid black;
+            /* transform: translate(200px, 400px); */
+            /* transform: rotate(20deg); */
+            /* transform: scale(4, 2); */
+            
+        }
+        
+        /* matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()) */
+        
+        #div{
+            color: red;
+            /* transform:  matrix(1, 0, 1.5, 1, 150, 0); */
+            transform: rotateZ(150deg);
+        }
+
+
+        .box{
+            width: 50px;
+            height: 50px;
+            background-color: #3162665d;
+            padding: 5px;
+            animation: box;
+            animation-duration: 4s;
+            /* animation-delay: 2S; */
+            /* animation-iteration-count: 3; */
+            animation-direction: alternate-reverse;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: both;
+            animation-play-state: paused;
+        }
+
+        @keyframes box{
+            from{
+                background-color: aqua;
+                width: 50px;
+                height: 50px;
+            }
+            to{
+                background-color: #3162665d;
+                width: 100px;
+                height: 100px;
+                transform: rotate(360deg);
+            }
+
+            0% {
+                background-color: aqua;
+                width: 50px;
+                height: 50px;
+            }
+            20% {
+                background-color: rgb(25, 0, 255);
+                width: 50px;
+                height: 50px;
+            }
+        }
+        span{
+            display: none;
+        }
+
+
+        /* image filter */
+
+        /* img{
+            filter: blur(5px);
+        } */
+
+        /* img{
+            width: 150px;
+            height: 150px;
+            filter: blur(0.8px);
+            -webkit-box-reflect: below;
+            object-fit: cover;
+            object-position: 20% 10%;
+        } */
+
+        .mask2{
+            mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 0.5) 50%);
+        }
+
+        
+        .pagination{
+            display: inline-block;
+        }
+
+        .pagination a{
+            font-size: 17px;
+            color: white;
+            padding: 3px;
+            margin: 2px;
+            text-decoration: none;
+        }
+
+        
+
+
+    </style>
+</head>
+<body>
+
+    <div>THIS IS DIV</div>
+    <div id="div">THIS IS DIV
+        <span>Divider</span>  
+    </div>
+
+
+    <div class="box">THIS</div>
+
+    <!-- <img src="../cartoon.jpg" alt=""> -->
+
+    <!-- <svg width="600" height="400">
+        <mask id="svgmask1">
+          <polygon fill="#ffffff" points="200 0, 400 400, 0 400"></polygon>
+        </mask>
+        <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../cartoon.jpg" mask="url(#svgmask1)"></image>
+      </svg> -->
+
+
+      <!-- <div class="mask2">
+        <img src="../cartoon.jpg" alt="Cinque Terre" width="600" height="400">
+        </div> -->
+
+        <div class="pagination">
+            <a href="#">&laquo;</a>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">&raquo;</a>
+          </div>
+    
+</body>
+</html>
