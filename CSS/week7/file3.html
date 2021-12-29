@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        :root{
+            --main-color: #ffbef1;
+            --second-color: #00811c;
+            --default-padding: 18px;
+        }
+        
+        .box__a{
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            border: 2px solid red;
+        }
+
+        .box{
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            margin: 5px;
+            border: 2px solid var(--second-color);
+            box-sizing: border-box;
+        }
+        
+        .box__c{
+            --default-padding: 15px;
+            width: 100%;
+            height: 100px;
+            padding: var(--default-padding);
+            margin: 5px;
+            border: 2px solid red;
+            box-sizing: border-box;
+            column-count: 3;
+            column-gap: 40px;
+            column-rule-style: dashed;
+            column-rule-color: red;
+            column-rule-width: 4px;
+            /* column-span: all; */
+            column-width: 20%;
+        }
+        
+        .box__d{
+            width: 300px;
+            border: 2px solid red;
+            padding: 5px;
+            resize: vertical;
+            overflow: auto;
+
+            outline: 2px solid red;
+            outline-offset: 5px;
+
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="box__a">
+        this iss it
+    </div>
+
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetu
+    </div>
+
+    <div class="box__c">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque dolorum illo atque vitae? Nam ex tempora vero explicabo fugit. Aperiam officiis odit fuga a quisquam maxime quibusdam quod corporis dicta!
+        
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti quae deserunt est assumenda odio saepe dolore provident non vel ad vitae odit, fugit temporibus nulla, molestias eligendi autem ducimus voluptatum.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab repudiandae tempore, laudantium sed minima temporibus rerum non libero quo a minus aliquam molestias aliquid velit explicabo, voluptatem, nobis exercitationem incidunt!
+    </div>
+
+
+    <div class="box__d">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus, sunt facere, omnis aspernatur laudantium voluptatem molestiae sapiente reiciendis asperiores totam, culpa accusantium earum atque veritatis iusto sint modi? Ab, magni.
+    </div>
+
+    <!-- 
+
+    width + padding + border = actual width of an element
+    height + padding + border = actual height of an element
+
+
+     -->
+</body>
+</html>
