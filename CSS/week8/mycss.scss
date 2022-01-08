@@ -1,0 +1,24 @@
+@import './style1.scss';
+
+
+@mixin important-text {
+    color: red;
+    font-size: 25px;
+    font-weight: bold;
+    border: 1px solid blue;
+  }
+
+body{
+    background-color: $blue;
+    color: $text_color;
+}
+
+
+.text{
+    @include important-text;
+    padding: 10px;
+}
+
+.text2{
+    @extend .text;
+}

@@ -1,0 +1,12 @@
+body {
+  background-color: #5ec8db;
+  color: #af0e0e; }
+
+.text, .text2 {
+  color: red;
+  font-size: 25px;
+  font-weight: bold;
+  border: 1px solid blue;
+  padding: 10px; }
+
+/*# sourceMappingURL=mycss.css.map */
