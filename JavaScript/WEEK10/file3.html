@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .danger{
+            color: red;
+        }
+        .success{
+            color: green;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1 id="demo">Hello World!</h1>
+
+    <button class="danger" onclick="increase()">Click Me</button>
+    <button class="success" onclick="">Click Me</button>
+
+
+    <script>
+
+        
+        var h1 = document.getElementById("demo");
+        
+        function increase(){
+            h1.style.fontSize = '40px';
+        }
+        
+        var value =  function decrease(){
+            h1.style.fontSize = '10px';
+        }
+
+
+        var a = 10;
+        var b = 20;
+
+        // XOR
+        // true + true = false
+        // true + false = true
+        // false + true = true
+        // false + false = false
+
+        // OR
+        // true + true = true
+        // false + true = true
+        // true + false = true
+        // false + false = false
+
+        // AND 
+        // true + true = true
+        // false + true = false
+        // true + false = false
+        // false + false = false
+
+        // if((a > b) || (b !== 20) ){
+        //     document.write('HELLO');
+        // }else{
+        //     document.write('Bye!');
+        // }
+
+        // Nullish Coalescing
+
+        // if( a > b ){
+        //     document.write('HELLO');
+        // }else{
+        //     document.write('Bye!');
+        // }
+
+        // document.write( (a < b) ? "HELLO" : "Bye")
+
+        // if (a > b) ? 
+
+        // document.write(data.length)
+
+        // document.write('<br>');
+        // document.write(typeof data.length);
+        // document.write('<br>');
+        // document.write(typeof 0);
+        // document.write('<br>');
+        // document.write(typeof '0');
+        // document.write('<br>');
+        
+        // if (data.length !== '0'){
+        //     document.write(" Data is empty");
+        // } else if(data.length > 0){
+        //     document.write(" Data is not empty");
+        // }
+
+        // document.write(3 >>> data);
+
+        // shift left 
+        // shift right
+
+        // document.write( a >= b );
+
+        var c = 10;
+        // c -= a;
+        // document.write(c &= 20)
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
