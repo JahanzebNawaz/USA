@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <input type="number" onchange="getValue()" id="a">
+    <input type="number" onchange="getValue()" id="b">
+
+    <h2 id="add">00</h2>
+
+    <!-- <h2 id="sub">00</h2>
+    <h2 id="mul">00</h2>
+    <h2 id="dv">00</h2> -->
+
+    <button onclick="this.innerHTML = Date()">What is Time?</button>
+    
+
+
+
+
+
+
+
+
+    <script>
+        
+        var a, b = 0;
+
+        function getValue(){
+            a = document.getElementById('a').value;
+            b = document.getElementById('b').value;
+            add(a, b);
+            sub(a, b);
+            mul(a, b);
+            div(a, b);
+        }
+       
+
+        function add(a, b){
+            var sum = parseInt(a) + parseInt(b);
+            document.getElementById('add').innerHTML = sum;
+        }
+
+        // function sub(a, b){
+        //     var sub = parseInt(a) - parseInt(b);
+        //     document.getElementById('sub').innerHTML = sub;
+        // }
+        // function mul(a, b){
+        //     var sub = parseInt(a) * parseInt(b);
+        //     document.getElementById('mul').innerHTML = sub;
+        // }
+        // function div(a, b){
+        //     var sub = parseInt(a) / parseInt(b);
+        //     document.getElementById('dv').innerHTML = sub;
+        // }
+
+        function sumValues(a, b){
+            return parseInt(a) + parseInt(b);
+        }
+
+
+        // var calculate = sumValues(5, 10);
+        // document.getElementById('add').innerHTML = sumValues(10, 10);
+
+        
+        const car = {
+            name: 'BMW',
+            model: 'X5',
+            color: 'black',
+            year: '2020',
+            price: '$100,000',
+            getCarInfo: function(){
+                return `<b>${this.name} ${this.model}</b>`;   
+            }
+        }
+
+        // car = {
+        //     name: 'Tesla',
+        //     model: 'Y',
+        //     color: 'black',
+        //     year: '2020',
+        //     price: '$100,000',
+        // }
+
+
+        
+        
+        // var text = " " + car.name + " " + car.model;
+        
+        
+        var text = `
+        <h1>${car.name}</h1>
+        <h2>${car.model}</h2>
+        <h3>${car.color}</h3>
+        <h4>${car.year}</h4>
+        <h5>${car.price}</h5>
+        <h5>${car.getCarInfo()}</h5>
+        `;
+        
+        document.write(text);
+        
+        // var cars = [1,2,3,4,5 ]
+        // var persons = ['Abdul', 'Sameer', 'Sheroz']
+
+        // document.write(persons[0], '<br>');
+        // document.write(persons[1], '<br>');
+        // document.write(persons[2], '<br>');
+
+        var cars = [
+            {
+                name: 'BMW',
+                model: 'X5',
+                color: 'black',
+                year: '2020',
+                price: '$100,000',
+            },
+            {
+                name: 'Tesla',
+                model: 'Y',
+                color: 'black',
+                year: '2020',
+                price: '$100,000',
+            },
+            {
+                name: 'Audi',
+                model: 'A4',
+                color: 'black',
+                year: '2020',
+                price: '$100,000',
+            },
+            {
+                name: 'Mercedes',
+                model: 'C',
+                color: 'black',
+                year: '2020',
+                price: '$100,000',
+            },
+            
+        ]
+
+
+
+        // document.write(cars.length, '<br>');
+
+        // document.write(cars[0].name,  '<br>');
+        // document.write(cars[1].name,  '<br>');
+        // document.write(cars[2].name,  '<br>');
+        // document.write(cars[3].name,  '<br>');
+
+
+
+        var details = `
+        <br>
+        <hr>
+        <pre>
+        Name: ${cars[2].name}
+        Model: ${cars[2].model}
+        color: ${cars[2].color}
+        year: ${cars[2].year}
+        price: ${cars[2].price}
+        </pre>
+        `
+        // document.write(details)
+
+
+
+
+        
+        var cars =  [
+            {'name': 'BMW', 'model': 'X5', 'color': 'black', 'year': '2020', 'price': '$100,000'},
+            {'name': 'Tesla', 'model': 'Y', 'color': 'black', 'year': '2020', 'price': '$100,000'},
+            {'name': 'Audi', 'model': 'A4', 'color': 'black', 'year': '2020', 'price': '$100,000'},
+            {'name': 'Mercedes', 'model': 'C', 'color': 'black', 'year': '2020', 'price': '$100,000'},
+            {'name': 'Honda', 'model': 'Civic', 'color': 'black', 'year': '2020', 'price': '$100,000'},
+           
+        ]
+
+        // document.write(typeof cars, '<br>');
+        // document.write(cars[0].name, '<br>');
+
+
+
+    </script>
+
+    
+</body>
+</html>
