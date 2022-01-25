@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="check()">
+
+    <!-- https://www.w3schools.com/jsref/dom_obj_event.asp -->
+    
+    <div id="demo"></div>
+
+    
+    <button onclick="check()">Click</button>
+    <button onmouseover="check()">Click</button>
+    <button onmouseout="check()">Click</button>
+    <button onmouseup="check()">Click</button>
+
+
+
+    <input type="text" onchange="check()">
+    <input type="text" onkeydown="check()">
+    <input type="text" onkeypress="check()">
+    <input type="text" id="data" onkeyup="check()">
+
+
+    <script>
+        
+    function check(){
+        // document.write('clicked');
+        // document.write('THIS')
+        // var data = document.getElementById('data').value;
+        document.getElementById('demo').innerHTML = 'data';
+    }
+
+    // let words = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+    // document.write(words.length);
+
+
+    // get value from other website 
+    // async  await function getvalue(){}
+    // process this value
+    // function process(){}
+    // display this value
+    // function display(){}
+
+
+    var sentence = "The       quick brown fox fox \r \t \b \n \f \v jumps fox over the lazy dog";
+
+    // let words = sentence.split(" ");
+    // let words = sentence.slice(0, -3)
+    // let words = sentence.substring(0, 15)
+    // let words = sentence.substr(7, 15)
+    // ['The', 'quick', 'brown', 'fox', 'jumps', 'over', 'the', 'lazy', 'dog'];
+    // let words = sentence.replace('fox', 'cat');
+    // let words = sentence.toLowerCase();
+    
+    // let words = sentence.concat(" ", "Hello", " ", "World");
+    // let words = sentence.trim();
+    // let words = sentence.charAt(1);
+    // let words = sentence.charCodeAt(0);
+    // let words = sentence.indexOf('fox');
+    // let words = sentence.lastIndexOf('the');
+    // let words = sentence.search('fox');
+    // let words = sentence.match(/fox/g);
+    // let words = sentence.includes('fox', 23);
+    // let words = sentence.startsWith('The');
+    let words = sentence.endsWith('dog');
+
+
+    document.write('<br>', words)
+    // document.write('<br>', sentence)
+</script>
+</body>
+</html>
