@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="text" onkeyup="filterCars(this.value)">
+
+    <div id="container">
+
+    </div>
+
+
+
+    <p id="cars"></p>
+
+    <script>
+        // fetch from DB
+        const persons = ['john', 'jane', 'bob', 'joe'];
+        const numbs = [1, 2, 3, 4, 5];
+
+        // const newone = numbs.concat(persons);
+        // persons.splice(2, 0,  'a', 'b');
+        // const newone = persons.slice(0,2);
+        persons.reverse()
+        document.write(persons, '<br>');
+        // const shifted = persons.unshift('jake');
+
+
+
+
+        // document.write(shifted);
+
+        // persons[0] = 'jim';
+        // document.write('<br>');
+        // document.write(persons);
+
+        // persons = ['jim', 'jake']
+
+        // document.write(persons);
+
+        persons.push('jim');
+        // document.write(persons.length);
+
+        // persons.pop();
+        // document.write(persons);
+
+        // persons.forEach(function(name){
+        //     document.write(`${name}<br>`);    
+        // })
+
+        const person_obj = {
+            name: 'john',
+            age: 30,
+            job: 'developer',
+            hobbies: ['music', 'sports', 'cooking']
+        }
+
+
+        
+        // const name = "john"
+
+        // document.write(name);
+
+        // name = "jane"
+        // document.write(name);
+
+
+        const persons_list = [
+            {
+                name: 'john',
+                age: 30,
+                job: 'developer',
+                hobbies: ['music', 'sports', 'cooking']
+            },
+            {
+                name: 'jane',
+                age: 25,
+                job: 'designer',
+                hobbies: ['art', 'sports', 'cooking']
+            },
+            {
+                name: 'bob',
+                age: 27,
+                job: 'developer',
+                hobbies: ['music', 'sports', 'cooking']
+            },
+            {
+                name: 'joe',
+                age: 30,
+                job: 'developer',
+                hobbies: ['music', 'sports', 'cooking']
+            }
+        ];
+
+        // persons_list.sort();
+
+        persons_list.forEach(function(person){
+            let display = `
+                        <h3>${person.name}</h3>
+                        <p>${person.age}</p>
+                        <p>${person.job}</p>
+                        <p>${person.hobbies}</p>
+                    `;
+            let container = document.getElementById('container');
+            container.innerHTML += display;
+            
+        })
+
+        function filterCars(input_name){
+
+            for(let i = 0; i< persons_list.length; i++){
+                checkName(persons_list[i], input_name);
+            }
+
+        };
+
+
+        function checkName(person, input_name){
+            if(person.name.toLowerCase() === input_name.toLowerCase()){
+                    let display = `
+                        <h3>${person.name}</h3>
+                        <p>${person.age}</p>
+                        <p>${person.job}</p>
+                        <p>${person.hobbies}</p>
+                    `;
+                    document.getElementById('container').innerHTML = display;
+               }
+        }
+
+
+
+    
+    // TASK 1
+    // create a list of 10 cars 
+    // 10 items means 10 objects of cars in list.
+
+    // create an input field to search specific car in list 
+    // display that cars details in layout.. if no cars found. 
+    // display any alert message
+       
+
+    </script>
+
+</body>
+</html>
