@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- <p>Fri Mar 15 2019 00:00:00 GMT-0400 (Eastern Daylight Time)</p> -->
+
+    
+    
+    <input type="date" id="date">
+    
+    <button onclick="getDateFromUser()">Click</button>
+    
+    <br>
+    <br>
+    <br>
+
+    <div id="show">
+        THIS DATE
+    </div>
+
+    
+
+    <script>
+
+
+        function getDateFromUser(){
+            var date = document.getElementById('date').value;
+            document.getElementById('show').innerHTML = date;
+            
+        }
+
+
+        // const date_Time = new Date();
+        // document.getElementById('show').innerHTML = date_Time;
+        
+        // 7 numbers specify year, month, day, hour, minute, second, and millisecond (in that order):
+        // const new_date = new Date(2023, 1, 15, 23, 59, 59, 999);
+        // document.getElementById('show').innerHTML = new_date;
+
+
+        const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+        const date_Time = new Date();
+        // let month = months[date_Time.getMonth()];
+        // date_Time.setDate(20)
+        // date_Time.setFullYear(1997);
+
+        // document.getElementById('show').innerHTML = date_Time;
+        
+        //  comment  
+        // let time_now = new Date(); //12 12 1990 2:39;
+
+        //  post this time_now to database 
+        //  stored in DB  //12 12 1990 2:39;
+
+        // gets the data from DB
+        
+        // display that data in layout (HTML)
+
+        // function check diff (){
+        //     // date from DB
+        //     let todays_date  = new Date();
+
+
+        // }
+        
+        // document.getElementById('show').innerHTML =  getTodaysDate();
+            
+        // function getTodaysDate(year, month, day){
+        //     var todays_date = new Date();
+        //     if(year, month, day){
+        //         todays_date = new Date(year, month, day);
+        //     }
+        //     return todays_date;
+        // }
+
+
+
+
+
+
+        // TASK 2
+
+        // enter DOB and display 
+        // age 
+        // days 
+        // years 
+        // months
+        // minutes 
+        // seconds 
+        // milliseconds
+
+
+        // TASK 3
+        // create inpout fields to get date of the cars 
+        // then add a button to store it in array that you have create for the 
+        // existing cars
+        
+        
+        // add 5 differenet cars by default
+        
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
