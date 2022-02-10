@@ -16,20 +16,24 @@
 
         function getDetails(){
 
-        // var dob = document.getElementById('date').value;
-        var dobDate = new Date(1997,0,1);
+        var dob = document.getElementById('date').value;
+        var dobDate = new Date(dob);
 
 
         var todaysDate = new Date();
         // document.write(dobDate.getTime(), "<br>");
         // document.write(todaysDate.getTime())
         
-        document.write(dobDate + " <br> " + todaysDate);
+        // document.write(dobDate + " <br> " + todaysDate);
 
         // var sum = todaysDate.getTime() - dobDate.getTime();
         var age = todaysDate.getFullYear() - dobDate.getFullYear();
 
-        document.write(" <br> " + age);
+        document.write("<br> " + age + "<br>");
+
+        var months = todaysDate.getMonth() - dobDate.getMonth();
+        // document.write("MONTHS: " +  age * 12);
+        document.write("MONTHS: " +  months);
 
         // var years = new Date(sum);
 
