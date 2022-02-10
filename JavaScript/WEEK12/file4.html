@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="date" id="date">
+    <button onclick="getDetails()">CLick</button>
+
+
+    <script>
+
+        function getDetails(){
+
+        // var dob = document.getElementById('date').value;
+        var dobDate = new Date(1997,0,1);
+
+
+        var todaysDate = new Date();
+        // document.write(dobDate.getTime(), "<br>");
+        // document.write(todaysDate.getTime())
+        
+        document.write(dobDate + " <br> " + todaysDate);
+
+        // var sum = todaysDate.getTime() - dobDate.getTime();
+        var age = todaysDate.getFullYear() - dobDate.getFullYear();
+
+        document.write(" <br> " + age);
+
+        // var years = new Date(sum);
+
+        // document.write(sum / 31536000000);
+
+
+        // document.write(years);
+
+        }
+    </script>
+    
+</body>
+</html>
