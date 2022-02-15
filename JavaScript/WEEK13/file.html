@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div>
+        <label for="">Vehicle Name:</label>
+        <input type="text" id="name"> <br>
+        <label for="">Vehicle Model:</label>
+        <input type="text" id="model"> <br>
+        <label for="">Vehicle Reg No:</label>
+        <input type="text" id="reg_no"> <br>
+
+        <input type="button" value="Submit" onclick="getData()">
+    </div>
+
+    <hr>
+    <div>
+        <label for="">Search</label>
+        <input type="search" name="" id="" onchange="search(this.value)">
+    </div>
+
+    <hr>
+
+    <div>
+        <ol id="data__display">
+        </ol>
+    </div>
+
+
+    <script>
+        // data from input fields
+        
+        // store data in database.
+
+        // get dATA from database.
+
+
+        // list of data
+        var data_list = [
+            {
+                name: "Honda",
+                model: "2021",
+                reg_no: "X213"
+            },
+            {
+                name: "Hundai",
+                model: "2021",
+                reg_no: "X213"
+            },
+            {
+                name: "BMW",
+                model: "2021",
+                reg_no: "X213"
+            },
+            {
+                name: "Ford",
+                model: "2021",
+                reg_no: "X213"
+            }
+        ];
+
+
+        function getData(){
+            var name_value = document.getElementById('name').value;
+            var model_value = document.getElementById('model').value;
+            var reg_no_value = document.getElementById('reg_no').value;
+
+            const data = {
+                name: name_value,
+                model: model_value,
+                reg_no: reg_no_value
+            };
+
+            data_list.push(data);
+            displayData();
+        }
+
+
+        
+        // display data in the list
+        function displayData() {
+            document.getElementById("data__display").innerHTML = "";
+            
+
+            for(let item of data_list.values()){
+            const vehicle = item;
+
+            const show_data = `
+                <li>
+                    <h3>${vehicle.name}</h3>
+                    <p>${vehicle.model}</p>
+                    <p>${vehicle.reg_no}</p>
+                </li>`;
+            document.getElementById("data__display").innerHTML += show_data;
+
+            }
+        }
+
+        displayData()
+
+
+        function search(value){
+            if (value !== "") {
+                for(let item of data_list){
+                    const vehicle = item;
+                    
+                    if (vehicle.name.toLowerCase().includes(value.toLowerCase())) {
+                        const show_data = `
+                            <li>
+                                <h3>${vehicle.name}</h3>
+                                <p>${vehicle.model}</p>
+                                <p>${vehicle.reg_no}</p>
+                            </li>`;
+                        document.getElementById("data__display").innerHTML = show_data;
+                    }else{
+                        const show_data = `
+                            <li>
+                                <h3>No data found!</h3>
+                            </li>`;
+                        document.getElementById("data__display").innerHTML = show_data;
+                    }
+                }
+            }
+        }
+
+       
+
+
+
+
+        
+
+    </script>
+    
+</body>
+</html>
