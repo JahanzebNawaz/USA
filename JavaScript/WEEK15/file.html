@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="ShowDate()">
+    <!-- <a href="google.com">Goolge</a> <br> -->
+
+    
+    <p id="demo">Date</p>
+    
+    <!-- <button onclick="document.getElementById('demo').innerText = Date()"> Click Me </button> -->
+
+    
+    <!-- <button onclick="ShowDate()">Click Me</button> -->
+    
+    <input type="text" id="name" onchange="getDetails()">
+    
+    <p id="data">THIS VALUE</p>
+
+
+    <!-- <element event="js code here"></element> -->
+
+    <script>
+        
+
+        function ShowDate(){
+            document.getElementById('demo').innerText = Date()
+        }
+
+
+        function getDetails(){
+            // to get details from the input field.
+            let name = document.getElementById('name').value;
+            // display that data into paragraph tag.
+            document.getElementById('data').innerText = name;
+
+        }
+
+
+    </script>
+</body>
+</html>
