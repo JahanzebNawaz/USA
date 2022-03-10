@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            background: yellow;
+            border: 1px solid #cccccc;
+            padding: 10px;
+            }
+    </style>
+</head>
+<body>
+
+
+    <p>Open the details.</p>
+
+<details style="color: black;" ontoggle="myFunction(this)">
+<summary>Copyright 1999-2014.</summary>
+<p> - by Refsnes Data. All Rights Reserved.</p>
+<p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
+</details>
+
+
+<details>
+    <summary>NEW ONE</summary>
+    <p> - by Refsnes Data. All Rights Reserved.</p>
+    <p> - by Refsnes Data. All Rights Reserved.</p>
+    <p> - by Refsnes Data. All Rights Reserved.</p>
+</details>
+
+
+<input type="search" id="myInput" onsearch="myFunction(this)">
+
+
+<p id="demo">Open the details.</p>
+
+
+<script>
+
+    // 1 click - open something
+        // function myFunction(e) {
+        //     if(e.style.color == 'red'){
+        //         e.style.color = 'black';
+        //     }else  if(e.style.color == 'black'){
+        //         e.style.color = 'red';
+        //     }
+
+        // }
+
+        function myFunction(e) {
+            // alert("The context menu is about to be shown");
+            document.getElementById("demo").innerHTML = "YOu Searched: " + e.value;
+        }
+</script>
+
+    
+</body>
+</html>
