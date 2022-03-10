@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- <h1 onclick="myFunction()" onmouseover="myFunction2()">Hello</h1> -->
+    <h1>Hello</h1>
+
+    <p id="demo"></p>
+    <p id="demo2"></p>
+
+
+    <script>
+        var h1 = document.querySelector('h1');
+
+        // h1.addEventListener('click', function() {
+        //     document.getElementById('demo').innerHTML = 'Hello World 2';
+        // });
+
+        // h1.addEventListener('mouseover', function() {
+        //     document.getElementById('demo2').innerHTML = 'Hello World 3';
+        // });
+
+        // function myFunction() {
+        //     document.getElementById('demo').innerHTML = 'Hello World 2';
+        // }
+
+        // function myFunction2() {
+        //     document.getElementById('demo2').innerHTML = 'Hello World 3';
+        // }
+
+
+        h1.onclick = function() {
+            document.getElementById('demo2').innerHTML = 'Hello World 3';
+        }
+        h1.onmouseover = function() {
+            document.getElementById('demo').innerHTML = 'Hello World 444';
+        }
+
+        // function sayHello() {
+        //     alert('Hello');
+        // }
+
+        
+
+    </script>
+    
+</body>
+</html>
