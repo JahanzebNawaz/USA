@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* #h1{
+            font-size: 5vw;
+        } */
+    </style>
+</head>
+<body>
+
+    <!-- <h1 id="h1" style="font-size: 23vw;">Hello</h1>
+    <h1>Hello</h1>
+    <h1>Hello</h1>
+    <h1>Hello</h1> -->
+
+    <div id="demo">Today is: </div>
+
+
+    <script>
+
+        let x = 32;
+        let y = 20000
+
+        // let tax_amount = (y * x) /100;
+        // document.write(tax_amount)
+
+        // let elem = document.getElementById("h1");
+        // let elem_style = getComputedStyle(elem);
+        // elem_style.fontFamily = "Arial";
+
+        // if (x > y || x == y) {
+        //     console.log("x is greater than y")
+        // } 
+
+        // if(x > y){
+        //     console.log("x is greater than y")
+        // }else if ( x == y){
+        //     console.log("x is equal to y")
+        // }else if (x < y){
+        //     console.log("x is less than y")
+        // }
+
+        // if(x == y){
+        //     console.log("x is equal to y")
+        // }else {
+        //     console.log('x is not equal to y')
+        // }
+
+
+        
+        let day = 'Monday';
+
+        let dayNo = new Date().getDay();
+
+        // if(dayNo == 0){
+        //     day = 'Sunday';
+        // }else if (dayNo == 1){
+        //     day = 'Monday';
+        // }else if (dayNo == 2){
+        //     day = 'Tuesday';
+        // }else if(dayNo == 3){
+        //     day = 'Wednesday';
+        // }else if(dayNo == 4){
+        //     day = 'Thursday';
+        // }else if(dayNo == 5){
+        //     day = 'Friday';
+        // }else if(dayNo == 6){
+        //     day = 'Saturday';
+        // }
+
+        switch(dayNo){
+            case 0:
+                day = 'Sunday';
+                break;
+            case 1:
+                day = 'Monday';
+                break;
+            case 2:
+                day = 'Tuesday';
+                break;
+            case 3:
+                day = 'Wednesday';
+                break;
+            case 4:
+                day = 'Thursday';
+                break;
+            case 5:
+                day = 'Friday';
+                break;
+            case 6:
+                day = 'Saturday';
+                break;
+            default:
+                day = 'Invalid Day';
+        }
+
+
+        let days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+
+
+        document.getElementById('demo').innerHTML = days[dayNo];
+
+
+
+
+    </script>
+    
+</body>
+</html>
