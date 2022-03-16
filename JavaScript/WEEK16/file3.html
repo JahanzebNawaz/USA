@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <ul id="data_list">
+    </ul>
+
+
+    <script>
+        let persons = ['John', 'Jane', 'Mary'];
+
+        let ul_elem = document.getElementById('data_list');
+
+        // for(let i = 0; i < persons.length; i++){
+        //     let li_elem = `<li>${persons[i]}</li>`;
+        //     ul_elem.innerHTML += li_elem;
+        // }
+
+        // for(let i = 0; i < persons.length; i++){
+        //     let li_elem = document.createElement('li');
+        //     li_elem.innerText = persons[i];
+        //     ul_elem.appendChild(li_elem)
+        // }
+
+        // for(key in persons){
+        //     ul_elem.innerHTML += `<li>${persons[key]}</li>`;
+        // }
+
+
+        // for(let value of persons){
+        //     ul_elem.innerHTML += `<li>${value}</li>`;
+        // }
+
+        /*
+        lett i = 0;
+        while(i < persons.length){
+            ul_elem.innerHTML += `<li>${persons[i]}</li>`;
+            i++;
+        }
+        */
+       
+
+        // for(let i = 0; i < persons.length; i++){
+        //     if(i == 1){
+        //         break;
+        //     }
+        //     let li_elem = `<li>${persons[i]}</li>`;
+        //     ul_elem.innerHTML += li_elem;
+        // }
+
+        // for(let i = 0; i < persons.length; i++){
+        //     if(persons[i] == 'Jane'){
+        //         continue;
+        //     }
+        //     let li_elem = `<li>${persons[i]}</li>`;
+        //     ul_elem.innerHTML += li_elem;
+        // }
+
+
+        let persons_list = [
+            {name: 'John', age: 20},
+            {name: 'Jane', age: 17},
+            {name: 'Mary', age: 22},
+            {name: 'Peter', age: 17},
+        ]
+
+        // let persons_list_2 = []
+
+        // for(let person of persons_list){
+        //     if(person.age > 18){
+        //         persons_list_2.push(person);
+        //     }
+        // }
+
+        // for(let person of persons_list_2){
+        //     ul_elem.innerHTML += `<li>${person.name}</li>`;
+        // }
+
+
+        // for(let value of persons_list){
+        //     if(value.age < 18){
+        //         continue;
+        //     }
+        //     let li_elem = `<li>${value.name} - ${value.age}</li>`;
+        //     ul_elem.innerHTML += li_elem;
+        // }
+
+
+    </script>
+
+    
+</body>
+</html>
