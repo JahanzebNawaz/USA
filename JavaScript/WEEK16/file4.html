@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        // const persons = ['John', 'Jane', 'Mary', 'Jane', 'John', 'Mary'];
+        // const persons = 'John, Jane, Mary';
+        // let new_persons = persons.split(',');
+
+        // for(itrate of itrateable){
+
+        // }
+
+        
+        // for(person of persons){
+
+        //     document.write(person + '<br>');
+        // }
+        
+        // document.write('------------------<br>');
+
+        // const persons_set = new Set(persons);
+        // persons_set.add('Jake');
+
+        // document.write(persons_set.delete('Jake'))
+        
+        // for(person of persons_set){
+        //     document.write(person + '<br>');
+        // }
+        
+
+        const persons = new Map(
+            [
+                ['name', 'John'],
+                ['age', 30],
+                ['job', 'Web Developer']
+            ]
+        );
+
+        // persons.set('rollno', 234);
+        // persons.set('name', 'James');
+
+        document.write(persons.get('age'));
+        document.write('<br>');
+        document.write(persons.get('name'));
+        
+    </script>
+    
+</body>
+</html>
