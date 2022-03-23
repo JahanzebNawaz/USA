@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    
+    
+    <input type="text" id="text">
+    <p id="demo1"></p>
+
+    <button id="btn" onclick="getValue()">Click</button>
+
+
+    <!-- <p id="demo5"><h1>Please visit Microsoft!</h1></p>
+
+    <div id="new"></div> -->
+
+
+    <div id="error"></div>
+
+
+    <script>
+        // var btn = document.getElementById("demo");
+        // // var ipt = document.getElementById("demo3");
+
+        // btn.addEventListener('click', function(){
+        //     myFunction()
+            
+        //     // let a = document.getElementById("demo3").value;
+        //     // document.getElementById('demo2').innerHTML = this.value;
+        // })
+        
+        // function myFunction() {
+        //     let text = document.getElementById("demo5").innerText;
+        //     console.log("THIS")
+        //     console.log(text);
+        //     document.getElementById("demo5").innerHTML = text.replace("Microsoft","W3Schools");
+        // }
+        
+        // console.log('hello');
+        // var btn = document.getElementById("demo");
+        // btn.addEventListener('click', function(){
+        //     alert('WORKED');
+        // })
+        // console.log('hello2');
+
+
+        // try {
+        //     console.log('TESITNG')
+        //     var btn = document.getElementById("demo243");
+        //     btn.addEventListener('click', function(){
+        //         alert('WORKED');
+        //     })
+        // } catch (error){
+        //     document.getElementById('error').innerHTML = "eventListernError: " + error;
+        //     console.log(error);
+        // } 
+        // finally {
+        //     console.log('FINALLY');
+        // }
+
+        // console.log('hello3');
+        
+        function getValue(){
+            try{
+                let text = document.getElementById("text").value;
+                console.log(text.length)
+                // if(text.length == 0) throw "Please enter a value";
+                // if(text.length > 10) throw "Please enter a value less than 10 characters";
+
+                if(text.length == 0){
+                    throw "Please enter a value";
+                }else if(text.length > 10){
+                    throw "Value is too long";
+                }
+                document.getElementById("demo1").innerHTML = text;
+
+            }catch(e){
+                document.getElementById("demo1").innerHTML = e;
+                // console.logo(e)
+            }
+        }
+
+
+
+
+
+    </script>
+</body>
+</html>
