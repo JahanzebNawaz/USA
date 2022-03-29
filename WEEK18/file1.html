@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- <div id="demo">Demo</div>
+    <div id="demo1">Demo</div>
+    <div id="demo2">Demo</div> -->
+
+    <script>
+        // function myFunc(){
+        //     var x = document.getElementById("demo");
+        //     x.innerHTML = "Hello World!";
+        // }
+
+        // myFunc();
+
+        // let myFunc2 = function(words){
+        //     var x = document.getElementById("demo1");
+        //     x.innerHTML = "Hello World! 2 " + words;
+        // }
+
+        // myFunc2("FUNCTION");
+
+
+        // let myFunc3 = (word) => {
+        //     var x = document.getElementById("demo2");
+        //     x.innerHTML = "Hello World! 3 " + word;
+        // }
+
+        // myFunc3("ARROW FUNCTION");
+
+        // myfc  = () => document.getElementById("demo2").innerHTML = "Hello World! 4";
+        // myfc();
+
+
+        // =====================================
+
+        class Student{
+
+            constructor(a_name, a_age){
+                this.name = a_name;
+                this.age = a_age;
+            }
+
+            Name(){
+                return "My name is " + this.name;
+            }
+
+            Age(){
+                return "My Age is " + this.age;
+            }
+
+        }
+
+        let student1 = new Student('Ahmed', 20);
+        document.write(student1.name, "<br>") 
+        document.write(student1.age, "<br>") 
+
+        document.write(student1.Name(), "<br>") 
+        document.write(student1.Age()) 
+
+
+        // let todayDate = new Date(1997,02,15);
+        // document.write(todayDate.getDate());
+
+
+
+
+    </script>
+    
+</body>
+</html>
