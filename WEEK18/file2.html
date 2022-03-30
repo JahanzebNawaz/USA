@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+        
+        class Math{
+            constructor(a, b){
+                this.a = a;
+                this.b = b;
+                
+                // this.a  = data[0]
+                // this.symbol = data[1]
+                // this.b = data[2]
+            }
+            
+
+
+
+            // add(param_a, param_b){
+            //     this.a = param_a;
+            //     this.b = param_b;
+            //     return this.a + this.b;
+            // }
+
+            // check(){
+            //     if(this.symbol == "+"){
+            //         return this.add();
+            //     }else if(this.symbol == "-"){
+            //         return this.sub();
+            //     }else if(this.symbol == "*"){
+            //         return this.mul();
+            //     }else if(this.symbol == "/"){
+            //         return this.div();
+            //     }
+            // }
+
+            add(){
+                return this.a + this.b;
+            }
+
+            sub(){
+                return this.a - this.b;
+            }
+
+            mul(){
+                return this.a * this.b;
+            }
+
+            div(){
+                return (this.a / this.b).toFixed(2);
+            }
+        }
+
+
+        // let sum = new Math(20, 30)
+        // let sum = new Math()
+
+        // document.write(sum.add(10, 8), "<br>");
+
+
+        // const nums = "2 + 2 - 4 * 2 / 2";
+        // "+ - * /"
+        // " 2 2 4 2 4"
+
+        // const nums_arr = nums.split(" ");
+        // document.write(nums_arr, "<br>");
+
+        
+        
+
+        // document.write(sum.add(), "<br>");
+        // document.write(sum.sub(), "<br>");
+        // document.write(sum.mul(), "<br>");
+        // document.write(sum.div(), "<br>");
+
+        // import myFunc from "./student.js";
+
+        // document.write(myFunc(), "<br>");
+
+        // import Navbar from "./navbar.js";
+
+
+        // const Navbar = () => {
+
+        // return ( <div>
+        //     <h1>THIS IS NAVBAR</h1>
+        // </div>)
+        // }
+
+        // document.write(Navbar(), "<br>");
+
+
+    </script>
+    
+</body>
+</html>
