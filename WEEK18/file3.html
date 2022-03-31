@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        const person = {
+            firstName: "John",
+            lastName: "Doe",
+        }
+
+        const person2 = {
+            firstName: "Jake",
+            lastName: "Doe",
+        }
+
+
+        let employees_list = [person, person2];
+
+        // [
+        //     {
+        //         firstName: "Jake",
+        //         lastName: "Doe",
+        //     },
+        //     {
+        //         firstName: "Jake",
+        //         lastName: "Doe",
+        //     }
+        // ]
+
+
+
+        // const {firstName, lastName} = person;
+
+        // document.write(firstName)
+        // document.write(lastName)
+        // document.write(typeof person)
+
+
+
+        
+
+        const employees = `{
+            "result": [
+                {
+                    "id": "1",
+                    "name": "John Doe",
+                    "email": "john@gmail.com"
+                },
+                {
+                    "id": "2",
+                    "name": "Jake Doe",
+                    "email": "Jake@gmail.com"
+                }
+            ]
+        }`;
+
+
+
+        const result = JSON.parse(employees)
+
+        // console.log(result.result[0].id)
+
+        // document.write(result.result[0].email)
+
+        const person3 = {
+            firstName: "John",
+            lastName: "Doe",
+        }
+
+        const test = JSON.stringify(person3)
+        console.log(test)
+        document.write(test)
+
+        
+        
+    </script>
+</body>
+</html>
