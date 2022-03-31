@@ -16,9 +16,9 @@
 const Navbar = () => {
 
 
-    return ( <div>
+    return `<div>
         <h1>THIS IS NAVBAR</h1>
-    </div>)
+    </div>`
 }
 
 
