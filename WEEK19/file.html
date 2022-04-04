@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+        WEBSITEURL = "https://mydomianname.com";
+        LOCALURL = "http://localhost:5000/";
+
+        DEBUG = false
+
+
+        // let sum = (2 + 2) * 2;
+        // console.log(sum, 'THIS');
+        // document.writ(sum);
+        // // debugger;
+        // sum = sum + 2;
+        // console.log(sum, 'THIS 2');
+        // document.write(sum);
+
+        let firstName = 'John';
+        let lastName = 'Doe';
+
+        let number = 2003;
+
+        const fullName = () => {
+            return firstName + ' ' + lastName;
+        }
+        
+        // document.write(fullName());
+
+        if (DEBUG) {
+            console.log(LOCALURL);
+        }else (
+            console.log(WEBSITEURL)
+        )
+        // const fullName2 = () => {
+        //     return firstName + ' ' + lastName;
+        // }
+
+        // const person = {
+        //     firstName: 'John',
+        //     lastName: 'Doe',
+        //     age: 25,
+        //     fullName: function() {
+        //         return this.firstName + ' ' + this.lastName;
+        //     }
+        // }
+
+        // const person2 = {
+        //     firstName: 'John', 
+        //     lastName: 'Doe'
+        // }
+
+
+        // const fullName2 = (a, b) => {
+        //     if(a === undefined) {
+        //         a = '';
+        //     }
+        //     if(b === undefined) {
+        //         b = '';
+        //     }
+        //     return a + ' ' + b;
+        // }
+
+        const fullName2 = (a='', b='Jake') => {
+            return a + ' ' + b;
+        }
+
+        document.write(fullName2(firstName, lastName));
+
+    </script>
+    
+</body>
+</html>
