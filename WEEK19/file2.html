@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="demo"></div>
+
+
+
+    <script src="filename.js"></script>
+    <script>
+        // let person;
+
+        // const personObj = {};
+
+        // // document.write(typeof personObj);
+        // // // document.write(typeof personObj === null );
+
+        // // if (typeof personObj != 'undefined') {
+        // //     console.log('personObj is null');
+        // // }
+        
+        // // person = 'John';
+        // // document.write(person);
+
+
+        // // const obj = document.getElementById("demo");
+        // // obj.innerHTML = "Hello World";
+        // // obj.innerHTML = "Hello";
+        
+        // let firstName = 'John'
+        // let lastName = "jakes"
+
+        // // let fullName = firstName + " " + lastName;
+
+        // document.getElementById("demo").innerHTML = firstName + " " + lastName;
+
+
+        // for let const 
+        // const function  = 'John';
+        
+        // var obj = {name: "John", new: "yes"};
+        // // let new = "John";
+        // document.getElementById("demo").innerHTML = obj.new;
+
+
+        // const persons = []
+
+        // document.write(Array.isArray(persons));
+
+        // Create Objects
+        // const apples = {name: 'Apples'};
+        // const bananas = {name: 'Bananas'};
+        // const oranges = {name: 'Oranges'};
+
+        // // Create a new Map
+        // const fruits = new Map();
+
+        // // Add the Objects to the Map
+        // fruits.set(apples, 500);
+        // fruits.set(bananas, 300);
+        // fruits.set(oranges, 200);
+
+        // // Display Object Type
+        // document.getElementById("demo").innerHTML = fruits.get(apples);
+
+
+        function sum(...args) {
+        let sum = 0;
+        // document.write(args)
+            for (let arg of args){
+                sum += arg
+            }
+            return sum;
+        }
+
+        let x = sum(4, 9, 16, 25, 29, 100, 66, 77);
+
+        document.getElementById("demo").innerHTML = x;
+
+
+    </script>
+    
+</body>
+</html>
