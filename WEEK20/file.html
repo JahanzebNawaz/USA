@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        // const fetchPromise =  fetch('https://mdn.github.io/learning-area/javascript/apis/fetching-data/can-store/products.json');
+
+        // console.log(fetchPromise);
+
+        // fetchPromise.then( response => {
+        //     console.log(response);
+        //     // const jsonPromise = response.json();
+        //     // console.log(jsonPromise)
+        //     // jsonPromise.then( data => {
+        //     //     console.log(data[0]);
+        //     // });
+        // });
+
+        // fetchPromise.then( response => {
+        //     if (!response.ok) {
+        //     throw new Error(`HTTP error: ${response.status}`);
+        //     }
+        //     return response.json();
+        // })
+        // .then( data => {
+        //     console.log(data[0]);
+        // });
+
+        // const fetchPromise = fetch('https://mdn.github.io/learning-area/javascript/apis/fetching-data/can-store/products.json');
+
+        // console.log(fetchPromise, 'PROMISE');
+        
+
+        // fetchPromise.then( response => {
+        //     console.log(`Received response: ${response.status}`);
+        //     return response.json()
+        // }).then(data => {
+        //     console.log(data)
+        // })
+
+
+        // let sum = 0 + 20;
+        // console.log("Started request...")
+
+
+        const fetchApi = async () => {
+            const response = await fetch('https://mdn.github.io/learning-area/javascript/apis/fetching-data/can-store/products.json');
+            console.log(response, "AWAIT");
+            // console.log(response.status)
+            // console.log(response.ok)
+            // id(!response.ok){
+            //     throw new Error()
+            // }
+
+            // console.log(response.json())
+            // const data = await response.json()
+            // console.log(data[0])
+
+            // for(let item of data){
+            //     console.log(item)
+            // }
+
+        }
+
+        fetchApi()
+
+
+
+    </script>
+</body>
+</html>
