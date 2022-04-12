@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="demo"></div>
+    <div id="demo2"></div>
+
+    <script>
+
+        const funCheck = function(a, b){
+            // document.getElementById('demo').innerHTML = arguments.length
+            return a * b
+        }
+
+        const newValue = funCheck(2,2).toString()
+        
+        // const newFunc = new Function("a", "b", "return a * b")
+        // const newValue = newFunc(2,2)
+
+        // document.getElementById('demo').innerHTML = newFunc(2,2)
+
+        // const newFunc2 = function(){
+        //     return 5
+        // }
+        // document.getElementById('demo').innerHTML = newFunc2() * 5
+        // document.getElementById('demo').innerHTML =  funCheck(2,2).toString()
+
+        // (function(){
+        //     let x = 5;
+        //     document.getElementById('demo').innerHTML = 5
+        // })()
+
+
+        let x = 5
+        const person = {
+            name: 'John'
+        }
+
+
+        const xy = (a) => {
+            a += 2
+            document.getElementById('demo').innerHTML = a
+        }
+
+        // xy(x)
+
+        const xyz = (a) => {
+            a.name = 'Jake'
+            document.getElementById('demo').innerHTML = a.name
+        }
+
+
+        // xyz(person)
+
+        function z(a){
+            document.getElementById('demo').innerHTML = a
+        }
+        window.z(2);
+
+        // document.getElementById('demo2').innerHTML = person.name
+
+
+    </script>
+    
+</body>
+</html>
