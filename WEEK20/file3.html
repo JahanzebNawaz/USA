@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        // function myFunca(a,b){
+        //     // document.write(arguments)
+        //     console.log(arguments)
+        //     console.log(a, b)
+        //     // console.log(args)
+        // }
+
+        // myFunc('Noman','Karachi','Pakistan','2432');
+
+
+        class Car {
+            constructor(brand) {
+                this.carname = brand;
+            }
+            present() {
+                return 'I have a ' + this.carname + "<br>";
+            }
+
+            colors(){
+                return ['red', 'white', 'green', 'grey']
+            }
+        }
+
+
+
+        class Model extends Car {
+            constructor(model, brand){
+                super(brand)
+                this.carModel = model;
+            }
+
+            getCarModel(){
+                return "I have this " + this.carname + " model " + this.carModel + "<br>"
+            }
+
+            show(){
+                return this.present()
+            }
+
+        }
+
+
+        // class Student {
+        //     constructor(name){
+        //         this.name = name
+        //     }
+
+        //     static showName(){
+        //         return "STudent Name is " + this.name
+        //     }
+        // }
+
+        class NewMath{
+
+            constructor(){
+                this.Sign = "&"
+            }
+
+            static addition(a, b){
+                return `${a} + ${b} = ${a + b}`;
+            }
+
+            static subtraction(a, b, clsArg){
+                return a + "-" + b + " = " + (a-b) + "  " + clsArg.Sign;
+            }
+
+        }
+
+
+        // let car = new Car('Honda')
+        // // document.writeln(car.carname)
+        // document.writeln(car.present(), )
+
+        // let carmodel = new Model(2022)
+        // // document.writeln(carmodel.carModel)
+        // document.writeln(carmodel.getCarModel())
+
+        // let car = new Model(2022, 'Tesla')
+
+        // document.writeln(car.carname)
+        // document.writeln(car.present())
+        // document.writeln(car.getCarModel())
+        // document.writeln(car.show())
+
+
+        // let student = new Student('Noman')
+
+        // document.writeln(Student.showName())
+
+
+        let calculation = new NewMath()
+
+        document.writeln(NewMath.addition(2,2), "<br>")
+        document.writeln(NewMath.subtraction(2,4, calculation))
+       
+        
+
+        // @staticmethod
+        // def newFunction():
+        //     return 'Hello World'
+
+
+    </script>
+    
+</body>
+</html>
