@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        // const person = {
+        //     name: "John",
+        //     age: 30,
+        //     city: "New York"
+        // };
+
+        // document.write(typeof person)
+        
+        // let personArray = Object.values(person)
+
+        // document.write(typeof personArray)
+
+        // document.write(personArray)
+
+        const personPrototype = {
+            greet() {
+                console.log(`hello, my name is ${this.name}!`);
+            }
+        }
+
+        function Person(name) {
+            this.name = name;
+        }
+
+
+        Person.prototype = personPrototype
+        console.log(Person)
+        Person.prototype.constructor = Person;
+        
+        console.log(Person)
+
+        function Person(first, last, age, eyecolor) {
+            this.firstName = first;
+            this.lastName = last;
+            this.age = age;
+            this.eyeColor = eyecolor;
+            // greet()
+        }
+
+        // let obj = Person()
+        // obj.greet()
+        // person.__func__
+
+
+        // const obj = new Person('John', 'Jake', 23, 'brown')
+
+        // Person.prototype.new_age = 2
+
+        // document.writeln(obj.new_age)
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
