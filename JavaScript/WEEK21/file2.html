@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="main">
+        <p>Heading 1</p>
+        <p>Heading 2</p>
+    </div>
+
+    <p class="intro">Hello World!.</p>
+    <p class="intro">This example demonstrates the <b>querySelectorAll</b> method.</p>
+
+    <div id="demo"></div>
+
+
+    <form id="form" action="/action_page.php">
+        First name: 
+        <input type="text" name="fname" value="Donald"><br>
+        Last name: 
+        <input type="text" name="lname" value="Duck"><br><br>
+        
+        <input type="submit" value="Submit">
+      </form> 
+
+    <div id="data"></div>
+    <script>
+
+    const element = document.getElementById("main");
+    const elem_b = element.getElementsByTagName('p');
+
+    document.getElementById('demo').innerHTML = elem_b[1].innerHTML
+
+    const class_elem = document.querySelectorAll('p.intro');
+    class_elem[0].style.color='red'
+
+    
+    // console.log(class_elem[0].style.color='red')
+
+    const form_data = document.forms['form']
+    let text = ''
+    for(let i = 0; i < form_data.length; i++){
+        text += form_data[i].value + '<br>'
+    }
+
+    document.getElementById('data').innerHTML = text
+
+    // if(form_data['fname'].value !== ''){
+    //     console.log()
+    //     alert("THIS IS VALUE")
+    // }
+    
+
+    </script>
+    
+</body>
+</html>
