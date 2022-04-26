@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body >
+
+
+
+    <!-- https://app.jkcodes.com -->
+
+    <!-- <a href="{window.location.hostname}/index" id="url"  >HOME</a>
+
+
+    <a href="{window.location.hostname}/faq" id="url2"   >faq</a> -->
+
+    <!-- <a href="<?php $_SERVER['HOST_NAME'] ?>/contact" id="url3"  >Contact</a> -->
+
+    <input type="button" value="Back" onclick="goBack()">
+
+    <script>
+
+        // confirm("Press a button!")
+
+
+        function goBack() {
+        window.history.back()
+        }
+
+
+// const url = window.location.hostname;
+
+
+        const url = () => {
+            const a = document.getElementById('url');
+
+            a.href = 'https://'+ window.location.hostname;
+            // return window.location.host;
+        }
+    </script>
+</body>
+</html>
