@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        const setCookies = (cookieName, cookieValue) => {
+            document.cookie = `${cookieName}=${cookieValue}`;
+            // document.cookie = toString(cookieName)+"="+toString(22);
+        }
+
+        // 14_aug.png
+        // 25_dec.png
+        // 9_sep.png
+
+        
+
+        // const setImage =(path) => {
+        //     let date = new Date();
+        //     let todays_pic = date.getDate() + "_" + date.getMonth() + ".png";
+
+        //     for(let x in path){
+        //         if(x == todays_pic){
+        //             return todays_pic
+        //         }
+        //     }
+        // }
+
+
+        const getCookie = (cookieName) => {
+            const cookies = document.cookie;
+            const cookiesArry = cookies.split(';')
+            for(let x in cookiesArry){
+                const cookieValue = cookiesArry[x]
+                const newCookieValue = cookieValue.replace(" ", "");
+                const values = newCookieValue.split('=');
+                if(values[0] == cookieName){
+                    return cookieValue
+                }
+            }
+            return "No Cookies found for " + cookieName
+        }
+
+        
+        const check = getCookie('username')
+        console.log(check)
+
+        // setCookies("age", 22)
+        // const checkAge = getCookie('age')
+        // console.log(checkAge)
+
+
+    </script>
+    
+</body>
+</html>
