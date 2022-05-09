@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p id="demo">Fetch a file to change this text.</p>
+
+
+    <script>
+
+
+        let file = "text.txt"
+
+        fetch(file)
+        .then(data => data.text())
+        .then(resp => {
+            document.getElementById('demo').innerHTML = resp
+        })
+
+
+
+          localStorage.setItem("name", "John Doe");
+        localStorage.getItem("name");
+        localStorage.clear()
+
+        sessionStorage.setItem("user_session", "john");
+        sessionStorage.setItem("user_session2", "test");
+        let session = sessionStorage.getItem("user_session");
+        console.log(session)
+
+        // sessionStorage.removeItem('user_session')
+
+        // let session2 = sessionStorage.getItem("user_session");
+        // console.log(session2)
+
+        sessionStorage.clear()
+
+
+    </script>
+    
+</body>
+</html>
