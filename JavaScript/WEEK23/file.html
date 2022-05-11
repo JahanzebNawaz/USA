@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Fetch API</h1>
+
+    <button type="submit" onclick="getData()">Click</button>
+    <button type="submit" onclick="getComments()">Comments</button>
+    <button type="submit" onclick="postData()">POST</button>
+
+    <div id="demo"></div>
+
+    <ul id="demo2">
+
+    </ul>
+
+    <script>
+
+        function getData() {
+
+            fetch('https://jsonplaceholder.typicode.com/todos')
+                .then(response => response.json())
+                .then(data => {
+
+                    // console.log(JSON.stringify(data))
+                    console.log(data)
+
+                    let box = ""
+                    const ul = document.getElementById('demo2')
+
+
+                    data.forEach(element => {
+                        box += "<li> ID: " + element.id + " and Title: " + element.title + " </li>";
+                        // ul.append("<li> ID: " + element.id + " and Title: " + element.title + " </li>")
+                    });
+
+                    ul.innerHTML = box;
+                })
+
+            // /comments?postId=1
+        }
+
+        function getComments() {
+
+            fetch('https://jsonplaceholder.typicode.com/comments?postId=1')
+                .then(response => response.json())
+                .then(data => {
+
+                    // console.log(JSON.stringify(data))
+                    console.log(data)
+
+                    let box = ""
+                    const ul = document.getElementById('demo2')
+
+
+                    data.forEach(element => {
+                        box += "<li> ID: " + element.id + " and name: " + element.name + " and email: " + element.email + " </li>";
+                        // ul.append("<li> ID: " + element.id + " and Title: " + element.title + " </li>")
+                    });
+
+                    ul.innerHTML = box;
+                })
+
+            // /comments?postId=1
+        }
+
+
+        function postData() {
+
+            var data = {
+            "Id": 78912,
+            "Customer": "Jason Sweet",
+            "Quantity": 1,
+            "Price": 18.00
+            };
+
+            fetch("https://reqbin.com/echo/post/json", {
+                method: "POST",
+                headers: {
+                    'Content-Type': 'application/json',
+                    "Accept": "application/json"
+                },
+                body: JSON.stringify(data)
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log(data)
+            })
+
+            // /comments?postId=1
+        }
+
+
+//         xhr.setRequestHeader("Accept", "application/json");
+// xhr.setRequestHeader("Content-Type", "application/json");
+
+// {
+//   method: 'POST', // or 'PUT'
+//   headers: {
+//     'Content-Type': 'application/json',
+//   },
+//   body: JSON.stringify(data),
+// }
+    </script>
+
+</body>
+
+</html>
